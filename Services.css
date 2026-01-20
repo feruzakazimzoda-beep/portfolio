@@ -1,0 +1,192 @@
+    body {
+background:#fff;
+margin:0;
+font-family:Arial,sans-serif;
+}
+
+.site-header {
+  background-color: #f5ece3;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;  /* logo chapda, menu o‘ngda */
+  align-items: center;             /* vertikal tekislash */
+  width: 100%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  color: #0b2140;
+}
+
+.logo .dot {
+  color: #ff7a00;
+}
+
+/* 🔥 ASOSIY TUZATISH – NAV NI FLEX QILISH VA GAPLARNI MASOFA BILAN JOYLASHTIRISH */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;             /* 2-rasmdagidek keng masofa */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: #0b2140;
+}
+
+/* HERO */
+.hero {
+background:#fbf7f6;
+padding:53px 0;
+text-align:center;
+}
+.hero h1 {
+color:#0b2140;
+font-size:50px;
+font-weight:700;
+}
+
+/* SERVICES */
+.services {
+background: #fbf7f6;
+padding:60px 20px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+justify-content:center;
+align-items:center;
+}
+
+/* SERVICE BOX */
+.service-box {
+background:#fff;
+padding:35px 10px;
+text-align:center;
+border-radius:12px;
+box-shadow: 0 10px 30px rgba(11,33,64,0.06);
+text-align: center;;     
+transition:0.3s;
+}
+.service-box:hover {
+transform:translateY(-6px);
+background:#fff;
+}
+.icon {
+font-size:40px;
+margin-bottom:10px;
+}
+.service-box p {
+color: #0b2140;
+font-size:17px;
+font-weight:600;
+}
+
+/* CONTACT */
+.contact-box {
+background:#e63926;
+padding:40px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+.contact-left {
+color:white;
+max-width:500px;
+}
+.free {
+font-size:14px;
+opacity:0.8;
+}
+.number {
+font-size:30px;
+font-weight:700;
+margin:5px 0;
+}
+.text {
+font-size:14px;
+opacity:0.9;
+}
+
+.btn {
+background:white;
+color:#e63926;
+padding:12px 25px;
+border-radius:8px;
+font-weight:700;
+text-decoration:none;
+transition:0.3s;
+}
+.btn:hover {
+background:#ffe7e5;
+}
+
+/* PROCESS */
+.process {
+padding:60px 20px;
+text-align:center;
+}
+.small {
+color:#777;
+font-size:14px;
+}
+.process h2 {
+font-size:32px;
+font-weight:700;
+}
+.subtitle {
+color:#666;
+margin-bottom:40px;
+}
+
+.steps {
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+.step {
+background-color: #fff;
+text-align:center;
+max-width:200px;
+box-shadow: 0 15px 35px rgba(11,33,64,0.06);;;
+}
+.circle {
+width:70px;
+height:70px;
+border-radius:50%;
+border:4px solid #e63926;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:700;
+color:#e63926;
+margin:0 auto 15px;
+}
+.step h3 {
+font-size:18px;
+font-weight:700;
+}
+.step p {
+color:#555;
+font-size:14px;
+}
