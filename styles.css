@@ -1,8 +1,16 @@
+/* =================================== */
+/* 1. RESET & BOX SIZING               */
+/* =================================== */
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+/* =================================== */
+/* 2. BODY & CONTAINER                 */
+/* =================================== */
 
 body {
   font-family: 'Segoe UI', Roboto, Arial, sans-serif;
@@ -18,7 +26,10 @@ body {
   margin-right: auto;
 }
 
-/* Header */
+/* =================================== */
+/* 3. HEADER                            */
+/* =================================== */
+
 .site-header {
   background-color: #f5ece3;
   padding-top: 15px;
@@ -32,8 +43,8 @@ body {
 
 .header-inner {
   display: flex;
-  justify-content: space-between;  /* logo chapda, menu o‘ngda */
-  align-items: center;             /* vertikal tekislash */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -47,11 +58,10 @@ body {
   color: #ff7a00;
 }
 
-/* 🔥 ASOSIY TUZATISH – NAV NI FLEX QILISH VA GAPLARNI MASOFA BILAN JOYLASHTIRISH */
 .nav {
   display: flex;
   align-items: center;
-  gap: 35px;             /* 2-rasmdagidek keng masofa */
+  gap: 35px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -67,16 +77,21 @@ body {
   color: #0b2140;
 }
 
-/* Hero */
+/* =================================== */
+/* 4. HERO SECTION                      */
+/* =================================== */
+
 .hero {
   display: flex;
   gap: 30px;
-  padding-top: 150px;   
+  padding-top: 150px;
   padding-bottom: 40px;
   align-items: center;
 }
 
-.hero-left { flex: 1; }
+.hero-left {
+  flex: 1;
+}
 
 .hero-right {
   flex: 1;
@@ -110,6 +125,7 @@ body {
 }
 
 /* Buttons */
+
 .btn {
   padding: 10px 16px;
   border-radius: 8px;
@@ -117,6 +133,7 @@ body {
   cursor: pointer;
   font-weight: 600;
   margin-right: 10px;
+  transition: all 0.3s ease;
 }
 
 .btn.primary {
@@ -130,7 +147,13 @@ body {
   color: #ff7a00;
 }
 
-/* Portrait */
+.hero-actions .btn:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transform: translateY(-3px);
+}
+
+/* Portrait Image */
+
 .portrait {
   width: 260px;
   height: 260px;
@@ -141,7 +164,10 @@ body {
   box-shadow: 0 20px 40px rgba(11,33,64,0.08);
 }
 
-/* Stats */
+/* =================================== */
+/* 5. STATS SECTION                     */
+/* =================================== */
+
 .stats {
   display: flex;
   gap: 18px;
@@ -157,6 +183,12 @@ body {
   box-shadow: 0 10px 30px rgba(11,33,64,0.06);
   text-align: center;
   min-width: 160px;
+  transition: all 0.3s ease;
+}
+
+.stat:hover {
+  box-shadow: 0 15px 25px rgba(11,33,64,0.25);
+  transform: translateY(-5px);
 }
 
 .stat .small {
@@ -164,7 +196,10 @@ body {
   font-size: 13px;
 }
 
-/* Services */
+/* =================================== */
+/* 6. SERVICES SECTION                  */
+/* =================================== */
+
 .services {
   padding: 36px 0;
 }
@@ -189,6 +224,12 @@ body {
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(11,33,64,0.04);
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 15px 25px rgba(11,33,64,0.25);
+  transform: translateY(-5px);
 }
 
 .service-card .icon {
@@ -203,15 +244,18 @@ body {
   background: linear-gradient(135deg,#ffd9c1,#ffb07a);
 }
 
-/* Experience */
+/* =================================== */
+/* 7. EXPERIENCE SECTION                */
+/* =================================== */
+
 .experience {
   padding: 34px 0;
   background: linear-gradient(180deg,#fff,#fff);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
 }
 
 .exp-list {
-     margin-top: 18px; 
+  margin-top: 18px;
 }
 
 .exp-row {
@@ -241,7 +285,10 @@ body {
   border-radius: 10px;
 }
 
-/* Portfolio */
+/* =================================== */
+/* 8. PORTFOLIO SECTION                 */
+/* =================================== */
+
 .portfolio {
   padding: 36px 0 80px 0;
 }
@@ -258,6 +305,12 @@ body {
   background-position: center;
   height: 180px;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.p-item:hover {
+  box-shadow: 0 15px 25px rgba(11,33,64,0.25);
+  transform: translateY(-5px);
 }
 
 .p1 { background-image: url('https://i.pinimg.com/736x/d0/04/31/d004319bf4517a9252521298c11d596b.jpg'); }
@@ -267,11 +320,13 @@ body {
 .p5 { background-image: url('https://i.pinimg.com/736x/6d/ee/65/6dee65d21fc43afa5dd0e7599fc19753.jpg'); }
 .p6 { background-image: url('https://i.pinimg.com/1200x/c9/d3/ef/c9d3efbbc1cdc59c8ec6f3d645d865ee.jpg'); }
 
+/* =================================== */
+/* 9. FOOTER                            */
+/* =================================== */
 
- /* FOOTER  */
 .site-footer {
-  background-color: #f5ece3;        
-  color: #000;                   
+  background-color: #f5ece3;
+  color: #000;
   padding: 40px 20px 30px 20px;
   margin-top: 40px;
 }
@@ -279,7 +334,7 @@ body {
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
-  text-align: center;            
+  text-align: center;
 }
 
 .footer-line {
@@ -314,8 +369,8 @@ body {
 
 .footer-columns {
   display: flex;
-  justify-content: center;       
-  gap: 60px;                      
+  justify-content: center;
+  gap: 60px;
   flex-wrap: wrap;
   margin-top: 18px;
   margin-bottom: 8px;
@@ -324,7 +379,7 @@ body {
 .footer-col {
   min-width: 160px;
   max-width: 260px;
-  text-align: left;               
+  text-align: left;
 }
 
 .footer-col h6 {
@@ -346,7 +401,7 @@ body {
 }
 
 .footer-links a {
-  color: #000;                    
+  color: #000;
   text-decoration: none;
   font-size: 14px;
 }
@@ -360,16 +415,49 @@ body {
   margin-top: 26px;
 }
 
+/* =================================== */
+/* 10. RESPONSIVE MEDIA QUERIES        */
+/* =================================== */
+
 @media (max-width: 720px) {
   .footer-columns {
     flex-direction: column;
     gap: 24px;
     align-items: center;
   }
+
   .footer-col {
     text-align: center;
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+  }
 
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
