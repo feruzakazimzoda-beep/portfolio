@@ -41,6 +41,13 @@ body {
   z-index: 999;
 }
 
+.site-header .header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
 .header-inner {
   display: flex;
   justify-content: space-between;

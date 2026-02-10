@@ -9,11 +9,20 @@
   z-index: 999;
 }
 
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 16px;
+}
+
 .header-inner {
   display: flex;
   justify-content: space-between;  /* logo chapda, menu o‘ngda */
   align-items: center;             /* vertikal tekislash */
   width: 100%;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 16px;
 }
 
 .logo {
@@ -53,9 +62,10 @@
 }
 
 .blog-container {
-    width: 85%;
-    margin: auto;
-    text-align: center;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 16px;
+  text-align:center;
 }
 
 .blog-title {
@@ -169,4 +179,24 @@
 
 .read-more:hover {
     color: #1a3c7c;
+}
+
+@media (max-width:992px){
+  .blog-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:600px){
+  .nav{
+    display:none;
+  }
+
+  #blog{
+    padding-top:120px;
+  }
+
+  .blog-heading{
+    font-size:18px;
+  }
 }
