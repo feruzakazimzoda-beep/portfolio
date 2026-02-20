@@ -91,7 +91,7 @@ body {
 .hero {
   display: flex;
   gap: 30px;
-  padding-top: 150px;
+  padding-top: 215px;
   padding-bottom: 40px;
   align-items: center;
 }
@@ -176,6 +176,7 @@ body {
 /* =================================== */
 
 .stats {
+  padding: 40px 0;
   display: flex;
   gap: 18px;
   margin-top: -40px;
@@ -208,7 +209,7 @@ body {
 /* =================================== */
 
 .services {
-  padding: 36px 0;
+  padding: 121px 0;
 }
 
 .section-title {
@@ -256,7 +257,8 @@ body {
 /* =================================== */
 
 .experience {
-  padding: 34px 0;
+  padding: 34px 10px;
+  border-radius: 11px;
   background: linear-gradient(180deg,#fff,#fff);
   box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
 }
@@ -297,7 +299,7 @@ body {
 /* =================================== */
 
 .portfolio {
-  padding: 36px 0 80px 0;
+  padding: 130px 0 80px 0;
 }
 
 .portfolio-grid {
